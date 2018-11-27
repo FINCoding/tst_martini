@@ -7,6 +7,6 @@ type Discounts struct{
     id_car string
 }
 
-func NewDiscounts(id, description, id_sc, id_car string){
-    return &Discounts(id, description, id_sc, id_car)
+func NewDiscounts(id, description, id_sc, id_car string)*Discounts{
+    return &Discounts{id, description, id_sc, id_car}
 }
