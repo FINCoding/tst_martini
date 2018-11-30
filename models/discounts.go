@@ -1,12 +1,17 @@
 package models
 
-type Discounts struct{
-    id string
-    description string
-    is_sc string
-    id_car string
+type Discount struct{
+    Id string
+    Title string
+    Description string
+    //Id_sc string
+    //Id_car string
 }
 
-func NewDiscounts(id, description, id_sc, id_car string)*Discounts{
-    return &Discounts{id, description, id_sc, id_car}
+//func NewDiscount(id, title, description, id_sc, id_car string)*Discount{
+//    return &Discount{id, title, description, id_sc, id_car}
+//}
+
+func NewDiscount(id, title, description string)*Discount{
+    return &Discount{id, title, description}
 }
